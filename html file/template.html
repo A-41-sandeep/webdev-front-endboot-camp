@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css files/template.css">
+    <style>
+        h1{
+            background-color: cadetblue;
+            height: 100px;
+            width:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed; 
+            top: 0px; 
+           }
+
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        li{
+            margin: 30px; 
+            
+        }
+        main{
+            background-color: rgb(163, 192, 60);
+            height: 100px;
+            width: 100px;
+            color: rgb(38, 132, 194);
+            display: flex;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+        aside{
+            height: 100px;
+            width: 90%;
+            }
+        </style>
+    </head>
+<body>
+    <h1>
+        <main>
+            <p>logo</p>
+        </main>
+        <aside>
+        <ul type="none">
+             <li><a href="#sec-1"><span style="color:black">Section-1</span></a></li>
+             <li><a href="#sec-2"><span style="color:black">Section-2</span></a></li>
+             <li><a href="#sec-3"><span style="color:black">Section-3</span></a></li>
+             <li><a href="#footer"><span style="color:black">Footer</span></a></li>
+        </ul>
+        </aside>
+    </h1>
+    <!-- <div id="header">Header</div> -->
+    <div id="banner">Banner</div>
+    <section id="sec-1">
+        <div id="section-1">Section-1</div>
+        <section id="circles">
+            <div id="circle-1" class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </section>
+    </section>
+    <section id="sec-2">
+        <div id="section-2">Section-2</div>
+        <section id="blocks">
+            <main>
+              Main Containt
+            </main>
+            <aside>
+                <article class="articles">Article-1</article>
+                <article id="art-2" class="articles">Article-2</article>
+                <article class="articles">Article-3</article>
+            </aside>
+        </section>
+    </section>
+    <section id="sec-3">
+        <div>Section-3</div>
+        <section id="boxes">
+            <div class="box" id="box-1"></div>
+            <div class="box" id="box-2"></div>
+            <div class="box" id="box-3"></div>
+            <div class="box" id="box-4"></div>
+         </section>
+    </section>
+    <footer id="footer">
+        <div>Footer</div>
+    </footer>
+</body>
+</html>

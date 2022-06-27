@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form to collect information from user</title>
+    <link rel="stylesheet" href="../css files/forms.css">
+</head>
+<body>
+<section>
+    <h1>Student details</h1>
+    <lebel action="" method="get">
+        <lebel for="name">name</lebel>
+        <input required placeholder="enter name" name="name" type="text"/><br>
+        <label for="password">password</label>
+        <input autofocus type="password" name="password" id="password"><br>
+        <label for="feedback">feedback</label>
+        <textarea placeholder="enter feedback" name="feedback"></textarea><br>
+        
+        
+        <lebel for="radio">what is your age group</lebel><br>
+        <input type="radio" name="age" id="g1" value="below 18" checked>below 18<br>
+        <input type="radio" name="age" id="g2" value="18-20">18-20<br>
+        <input type="radio" name="age" id="g3" value="above 20">above 20<br>
+
+        <lebel for="checkbox">select the subject</lebel><br>
+        <input type="checkbox" name="check" id="check1" value="maths">maths<br>
+        <input type="checkbox" name="check" id="check2" value="english">english<br>
+        <input type="checkbox" name="check" id="check3" value="hindi">hindi<br>
+
+        <label for="selection">select your state</label>
+        <select name="state" id="states" size="3">
+            <option>uttar pradesh</option>
+            <option>Bihar</option>
+            <option>Jharkhand</option>
+            <option>Maharastra</option>
+            <option>Punjab</option>
+        </select>
+    <br>
+    <label>choose file</label>
+    <input type="file" name="files" id="fl">
+    
+
+
+    <br><input type="submit">
+    <input type="reset"><br>    
+    </form>
+</section>
+</body>
+</html>

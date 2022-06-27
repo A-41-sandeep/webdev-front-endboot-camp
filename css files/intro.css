@@ -1,0 +1,13 @@
+p{
+    color:darkgreen;
+    text-align: center;
+    font-style: italic;
+}
+
+table caption{
+ color:blue;
+}
+table{
+    border-style: solid;
+    border-color:red;
+}
