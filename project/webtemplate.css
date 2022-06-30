@@ -1,0 +1,46 @@
+*{
+    margin: 0%;
+}
+#background-image{
+    height:300px;
+    width:100%;
+    background-color: aqua;
+    background-image: url("https://t4.ftcdn.net/jpg/04/23/87/53/360_F_423875308_S4w1IW5aReFvYzMGt4bj98GgvEmVKHnd.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: fixed; */
+    /* top: 0%; */
+
+}
+#logo{
+    height:200px;
+    width: 200px;
+    margin: 50px;
+    border-radius: 30%;
+    
+}
+#price-pannel{
+    height:300px;
+    width: 100%;
+    background-image:linear-gradient(rgb(172, 211, 81),rgb(60, 128, 218));
+}
+#price-detail-para{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 70px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: hsla(319, 88%, 14%, 0.753);
+}
+#botton{
+margin-left: 550px;
+margin-top: 20px;
+height:100px;
+width:250px;
+background-color:white;
+text-align: center;
+}
+#get-it-pay{
+    text-decoration: none;
+}
