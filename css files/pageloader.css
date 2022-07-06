@@ -1,0 +1,81 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+#loader{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color:rgb(152, 221, 230);
+    flex-direction: column;
+}
+#ball{
+    height:50px;
+    width: 50px;
+  background:linear-gradient(to right, green 50%, yellow 50%);
+  border-radius: 50%;
+  animation: ball_Ani 2s linear infinite;
+}
+ 
+#shadow{
+    margin-top:10px;
+    height: 10px;
+    width: 50px;
+    background-color: grey;
+    border-radius: 80%;
+    animation: shadow_Ani 2s linear  infinite;
+
+}
+#text{
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(236, 120, 120);
+    font-weight: bold;
+}
+span{
+    font-size: 30px;
+    animation: blow 2s  linear infinite;
+}
+@keyframes ball_Ani{
+    0%{
+        transform:  translateY(0px) rotate(0deg) ;
+    }
+    50%{
+        transform: translateY(-150px) rotate(180deg) ;
+    }
+    100%{
+        transform: translateY(0px) rotate(360deg) ;
+    }   
+
+}
+
+@keyframes shadow_Ani
+{
+    0%{
+        transform:scale(1);
+        transform:opacity(1);
+    }
+    50%{
+        transform:scale(0.5);
+        opacity:0.3;
+    }
+    100%{
+        transform:scale(1);
+        transform:opacity(1);
+    }
+
+}
+@keyframes blow {
+    0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+} 

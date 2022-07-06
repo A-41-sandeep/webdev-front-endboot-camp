@@ -6,46 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css files/template.css">
-    <style>
-        h1{
-            background-color: cadetblue;
-            height: 100px;
-            width:100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: fixed; 
-            top: 0px; 
-           }
-
-        ul{
-            display: flex;
-            justify-content: center;
-            align-items: center; 
-        }
-        li{
-            margin: 30px; 
-            
-        }
-        main{
-            background-color: rgb(163, 192, 60);
-            height: 100px;
-            width: 100px;
-            color: rgb(38, 132, 194);
-            display: flex;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-        }
-        aside{
-            height: 100px;
-            width: 90%;
-            }
-        </style>
-    </head>
-<body>
-    <h1>
+    <link rel="stylesheet" href="../css files/pageloader.css">
+     </head>
+<body onload="pageLoad()">
+    <div id="loader">
+        <div id="ball"></div>
+        <div id="shadow"></div>
+        <div id="text">LOADING<span> . . .</span></div>
+    </div>
+    <section id="main_content">
+        <h1>
         <main>
             <p>logo</p>
         </main>
@@ -94,5 +64,19 @@
     <footer id="footer">
         <div>Footer</div>
     </footer>
+</section>
+
+
+<script>
+   function pageLoad(){
+   setTimeout(fun,5000);
+    function fun()
+    {
+        document.querySelector("#loader").style.display="none";
+        document.querySelector("#main_content").style.display="block";
+        
+    }
+}
+</script>
 </body>
 </html>

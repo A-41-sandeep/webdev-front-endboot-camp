@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <h1><audio id="music1" src="../downloads/10-second-short-music.mp3" controls ></audio></h1>
+    <span  id="button" class="material-icons">
+        play_disabled
+        </span>
+    <h2><video id="video1" src="../downloads/videoplayback.mp4" controls loop></video></h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dMMBEjea5rI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>website</h2>
+    <iframe height="500px" width="100%" src="https://a-41-sandeep.github.io/project-webd/" frameborder="0"></iframe>
+
+    <script>
+        var music=document.getElementById("music1");
+        var butn=document.getElementById("button");
+        butn.onclick=()=>{
+                   music.pause();
+        };
+        var video=document.getElementById("video1");
+        // document.addEventListener("visibilitychange",videopause);
+        function videopause()
+        {
+            if(document.hidden)
+                video.pause();
+            else
+                video.play();
+        }
+    </script>
+</body>
+</html>
