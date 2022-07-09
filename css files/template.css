@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 #main_content{
-    display:none;
+ /* display:none; */
 }
 #header{
     color: white;
@@ -36,16 +36,18 @@ li{
     margin: 30px; 
     
 }
-main{
+#logo{
     background-color: rgb(163, 192, 60);
     height: 100px;
     width: 100px;
-    color: rgb(38, 132, 194);
+    /* color: rgb(38, 132, 194); */
     display: flex;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    /* background-image:url(); */
+
 }
 aside{
     height: 100px;

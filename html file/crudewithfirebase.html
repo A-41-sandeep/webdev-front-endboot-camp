@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud with firebase</title>
+    <link rel="stylesheet" href="../css files/crudwithfirebase.css">
+</head>
+<body>
+    <div id="background">
+        <form id="container">
+            <h1>CRUD WITH FIREBASE</h1>
+            <hr>
+           <label for="Rollno">Rollno:&nbsp;&nbsp;<input type="text"></label>
+           <label for="name">Name:&nbsp;&nbsp;&nbsp;<input type="text"></label>
+           <label for="gender">Gender: 
+                <select style="width:400px;height: 30px;" name="gender" id="gen">
+                    <option value="" selected disabled>select gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+
+                </select> </label>
+           <label for="address">Address:<input type="text"></label>
+
+        <div> 
+           <button class="btns">create</button>
+           <button class="btns">read</button>
+           <button class="btns">update</button>
+           <button class="btns">delete</button>
+            </div>
+        </form>
+    </div>
+    <script type="module" src="../js/crudwithfirebase.js"></script>
+    <script  type="module" src="../js/firebaseconfig.js"></script>
+</body>
+</html>
