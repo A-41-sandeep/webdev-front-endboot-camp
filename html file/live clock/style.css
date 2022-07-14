@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+p{
+    margin: 10px;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:rgba(49, 9, 44, 0.959);
+    background-image:url("https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-fresh-natural-product-poster-background-image_146684.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity:0.6;     */
+}
+.bg{
+    background-image:url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX33243285.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(197, 115, 7);
+
+}
+#date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+#time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 110px;
+    /* color: aquamarine; */
+    
+}
+#wish-txt{
+    font-size: 40px;
+    font-weight: bold;
+}
+#txt{
+    text-align: center;
+    height: 60px;
+    width:500px;
+    font-size: 40px;
+}

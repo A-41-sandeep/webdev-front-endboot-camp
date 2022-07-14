@@ -2,6 +2,13 @@ var list=document.getElementsByTagName("ul")[0];
 var add=document.getElementById("plus");
 var data=document.getElementsByTagName("input")[0];
 
+// localStorage.clear();
+// function storeData()
+// {
+//   localStorage.setItem(data.value,data.value);
+//   insertTask();
+
+// }
 
 function insertTask(){
 
@@ -13,7 +20,6 @@ delt.classList.add("delt");
 var check=document.createElement("button");
 check.classList.add("check");
     
-
 li.innerText=data.value;
 delt.innerHTML="<i class='fa fa-trash' aria-hidden='true'></i>";
 check.innerHTML="<i class='fa fa-check-square' aria-hidden='true'></i>";
@@ -27,6 +33,11 @@ list.appendChild(maindiv);
 data.value="";
 }
 
+// function getAllData()
+// {
+
+// }
+
 function performAction(e)
 {
     var item=e.target;
@@ -37,10 +48,12 @@ function performAction(e)
       if (item.classList[1] == "fa-trash") {
         var parent=item.parentElement.parentElement;
         parent.remove();
+        // localStorage.removeItem(local);
       }
 }
 
 plus.onclick=insertTask;
+// plus.onclick=storeData;
 list.onclick=performAction;
 
 
